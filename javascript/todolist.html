@@ -7,12 +7,16 @@
         <script>
             document.addEventListener('DOMContentLoaded',function(){
                 document.querySelector('#todo-list').onsubmit= () => {
+
                     const li = document.createElement('li');
                     li.innerHTML=document.querySelector('#task').value;
+                    if (li.innerHTML != ''){
                     document.querySelector('#list').append(li);
                   
                     document.querySelector('#task').value='';
+                    }
                     return false;
+                   
             };
         
             });
