@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pre Intern Group</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                
+                    
+                document.querySelectorAll('.color-change').forEach(option => {
+                    
+                    option.onclick = () => {
+                      
+                        document.querySelector('#hello').style.color=option.dataset.color;
+                    };
+               
+                });
+           
+            });
+        </script>
+    </head>
+    <body>
+        <h1 id="hello">Hello!Welcome to Our PreIntern Group</h1>
+        <select>
+        <option class="color-change" data-color="red">Red</option>
+        <option class="color-change" data-color="black">Black</option>
+        <option class="color-change" data-color="blue">Blue</option>
+        <option class="color-change" data-color="green">Green</option>
+    </select>
+    </body>
+</html>
